@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>React Components</title>
+  </head>
+  <body>
+    <!-- Target Container -->
+    <div id="root"></div>
+    <div id="root2"></div>
+    <div id="root3"></div>
+
+    <!-- React Library & React DOM-->
+    <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
+
+    <script>
+      const secretIngredients = [
+        "2 lb salmon",
+        "5 sprigs fresh rosemary",
+        "2 tablespoons olive oil",
+        "2 small lemons",
+        "1 teaspoon kosher salt",
+        "4 cloves of chopped garlic",
+      ];
+
+      function IngredientsList() {
+        return React.createElement(
+          "ul",
+          { className: "ingredients" },
+          //here we use the array directly
+          secretIngredients.map((ingredient, i) => React.createElement("li", { key: i }, ingredient))
+        );
+      }
+
+      ReactDOM.render(React.createElement(IngredientsList, null, null), document.getElementById("root"));
+
+      function IngredientsList2(props) {
+        return React.createElement(
+          "ul",
+          { className: "ingredients" },
+          //here we access the array using the items attribute that is passed from the parent element into our component
+          props.items.map((ingredient, i) => React.createElement("li", { key: i }, ingredient))
+        );
+      }
+
+      ReactDOM.render(React.createElement(IngredientsList2, { items: secretIngredients }, null), document.getElementById("root2"));
+
+      //destructuring props and using only the items attribute that we need.
+      function IngredientsList3({items}) {
+        return React.createElement(
+          "ul",
+          { className: "ingredients" },
+          items.map((ingredient, i) => React.createElement("li", { key: i }, ingredient))
+        );
+      }
+
+      ReactDOM.render(React.createElement(IngredientsList3, { items: secretIngredients }, null), document.getElementById("root3"));
+    </script>
+  </body>
+</html>
