@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>React Fragments</title>
+  </head>
+  <body>
+    <!-- Target Container -->
+    <div id="root"></div>
+    <div id="root2"></div>
+
+    <!-- React Library & React DOM-->
+    <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
+
+    <!-- Babel Library -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      function Cat({ name }) {
+        return (
+          <React.Fragment>
+            <h1>The cat's name is {name}</h1>
+            <p>He's good.</p>;
+          </React.Fragment>
+        );
+      }
+
+      ReactDOM.render(<Cat name="Jungle" />, document.getElementById("root"));
+
+      function Cat2({ name }) {
+        return (
+          <>
+            <h1>The cat's name is {name}</h1>
+            <p>He's good.</p>
+          </>
+        );
+      }
+
+      ReactDOM.render(<Cat2 name="Tom" />, document.getElementById("root2"));
+    </script>
+  </body>
+</html>
