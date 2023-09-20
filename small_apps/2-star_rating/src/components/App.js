@@ -1,6 +1,11 @@
 import React from "react";
 
-import StarRating from "./StarRating";
+import StarRating from "./stars/StarRating";
+
+/**
+ * An example that uses hooks at the component level.
+ * Also demonstrates passing multiple unknown arguments to component.
+ */
 
 export default function App() {
   return (

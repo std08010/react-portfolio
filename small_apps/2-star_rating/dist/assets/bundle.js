@@ -14,11 +14,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _StarRating__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./StarRating */ "./src/components/StarRating.js");
+/* harmony import */ var _stars_StarRating__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./stars/StarRating */ "./src/components/stars/StarRating.js");
 
 
 function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_StarRating__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_stars_StarRating__WEBPACK_IMPORTED_MODULE_1__["default"], {
     totalStars: 5,
     style: {
       backgroundColor: "lightblue"
@@ -31,10 +31,155 @@ function App() {
 
 /***/ }),
 
-/***/ "./src/components/Star.js":
-/*!********************************!*\
-  !*** ./src/components/Star.js ***!
-  \********************************/
+/***/ "./src/components/AppColor.js":
+/*!************************************!*\
+  !*** ./src/components/AppColor.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ AppColor)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _data_colors_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data/colors.json */ "./src/data/colors.json");
+/* harmony import */ var _color_ColorList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./color/ColorList */ "./src/components/color/ColorList.js");
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+function AppColor() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(_data_colors_json__WEBPACK_IMPORTED_MODULE_1__),
+    _useState2 = _slicedToArray(_useState, 2),
+    colors = _useState2[0],
+    setColors = _useState2[1];
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_color_ColorList__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    colors: colors,
+    onRemoveColor: function onRemoveColor(id) {
+      var newColors = colors.filter(function (color) {
+        return color.id !== id;
+      });
+      setColors(newColors);
+    },
+    onRateColor: function onRateColor(id, rating) {
+      var newColors = colors.map(function (color) {
+        return color.id === id ? _objectSpread(_objectSpread({}, color), {}, {
+          rating: rating
+        }) : color;
+      });
+      setColors(newColors);
+    }
+  });
+}
+
+/***/ }),
+
+/***/ "./src/components/color/Color.js":
+/*!***************************************!*\
+  !*** ./src/components/color/Color.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Color)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _stars_StarRatingNoHook__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../stars/StarRatingNoHook */ "./src/components/stars/StarRatingNoHook.js");
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-icons/fa */ "./node_modules/react-icons/fa/index.esm.js");
+
+
+
+function Color(_ref) {
+  var id = _ref.id,
+    title = _ref.title,
+    color = _ref.color,
+    rating = _ref.rating,
+    _ref$onRemove = _ref.onRemove,
+    onRemove = _ref$onRemove === void 0 ? function (f) {
+      return f;
+    } : _ref$onRemove,
+    _ref$onRate = _ref.onRate,
+    _onRate = _ref$onRate === void 0 ? function (f) {
+      return f;
+    } : _ref$onRate;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: function onClick() {
+      return onRemove(id);
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_2__.FaTrash, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    style: {
+      height: 50,
+      width: 100,
+      backgroundColor: color
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_stars_StarRatingNoHook__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    selectedStars: rating,
+    onRate: function onRate(rating) {
+      return _onRate(id, rating);
+    }
+  }));
+}
+
+/***/ }),
+
+/***/ "./src/components/color/ColorList.js":
+/*!*******************************************!*\
+  !*** ./src/components/color/ColorList.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ColorList)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Color__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Color */ "./src/components/color/Color.js");
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+function ColorList(_ref) {
+  var _ref$colors = _ref.colors,
+    colors = _ref$colors === void 0 ? [] : _ref$colors,
+    _ref$onRemoveColor = _ref.onRemoveColor,
+    onRemoveColor = _ref$onRemoveColor === void 0 ? function (f) {
+      return f;
+    } : _ref$onRemoveColor,
+    _ref$onRateColor = _ref.onRateColor,
+    onRateColor = _ref$onRateColor === void 0 ? function (f) {
+      return f;
+    } : _ref$onRateColor;
+  if (!colors.length) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "No Colors Listed.");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, colors.map(function (color) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Color__WEBPACK_IMPORTED_MODULE_1__["default"], _extends({
+      key: color.id
+    }, color, {
+      onRemove: onRemoveColor,
+      onRate: onRateColor
+    }));
+  }));
+}
+
+/***/ }),
+
+/***/ "./src/components/stars/Star.js":
+/*!**************************************!*\
+  !*** ./src/components/stars/Star.js ***!
+  \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -61,10 +206,10 @@ function Star(_ref) {
 
 /***/ }),
 
-/***/ "./src/components/StarRating.js":
-/*!**************************************!*\
-  !*** ./src/components/StarRating.js ***!
-  \**************************************/
+/***/ "./src/components/stars/StarRating.js":
+/*!********************************************!*\
+  !*** ./src/components/stars/StarRating.js ***!
+  \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -73,7 +218,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Star__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Star */ "./src/components/Star.js");
+/* harmony import */ var _Star__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Star */ "./src/components/stars/Star.js");
+/* harmony import */ var _utils_HelperFunctions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/HelperFunctions */ "./src/components/utils/HelperFunctions.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 var _excluded = ["totalStars", "style"];
 function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -84,23 +230,15 @@ function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _ty
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 
 
 
-// Array Constructor function
-var createArray = function createArray(length) {
-  return _toConsumableArray(Array(length));
-};
 function StarRating(_ref) {
   var _ref$totalStars = _ref.totalStars,
     totalStars = _ref$totalStars === void 0 ? 5 : _ref$totalStars,
@@ -117,7 +255,7 @@ function StarRating(_ref) {
     style: _objectSpread({
       padding: "5px"
     }, style)
-  }, props), createArray(totalStars).map(function (n, i) {
+  }, props), (0,_utils_HelperFunctions__WEBPACK_IMPORTED_MODULE_2__.createArray)(totalStars).map(function (n, i) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Star__WEBPACK_IMPORTED_MODULE_1__["default"], {
       selected: i < selectedStars,
       key: i,
@@ -126,6 +264,68 @@ function StarRating(_ref) {
       }
     });
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, selectedStars, " of ", totalStars, " stars"));
+}
+
+/***/ }),
+
+/***/ "./src/components/stars/StarRatingNoHook.js":
+/*!**************************************************!*\
+  !*** ./src/components/stars/StarRatingNoHook.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ StarRatingNoHook)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Star__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Star */ "./src/components/stars/Star.js");
+/* harmony import */ var _utils_HelperFunctions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/HelperFunctions */ "./src/components/utils/HelperFunctions.js");
+
+
+
+function StarRatingNoHook(_ref) {
+  var _ref$totalStars = _ref.totalStars,
+    totalStars = _ref$totalStars === void 0 ? 5 : _ref$totalStars,
+    _ref$selectedStars = _ref.selectedStars,
+    selectedStars = _ref$selectedStars === void 0 ? 0 : _ref$selectedStars,
+    _ref$onRate = _ref.onRate,
+    onRate = _ref$onRate === void 0 ? function (f) {
+      return f;
+    } : _ref$onRate;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, (0,_utils_HelperFunctions__WEBPACK_IMPORTED_MODULE_2__.createArray)(totalStars).map(function (n, i) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Star__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      selected: i < selectedStars,
+      key: i,
+      onSelect: function onSelect() {
+        return onRate(i + 1);
+      }
+    });
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, selectedStars, " of ", totalStars, " stars"));
+}
+
+/***/ }),
+
+/***/ "./src/components/utils/HelperFunctions.js":
+/*!*************************************************!*\
+  !*** ./src/components/utils/HelperFunctions.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   createArray: () => (/* binding */ createArray)
+/* harmony export */ });
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+// Array Constructor function
+function createArray(length) {
+  return _toConsumableArray(Array(length));
 }
 
 /***/ }),
@@ -40320,6 +40520,16 @@ if (false) {} else {
 }
 
 
+/***/ }),
+
+/***/ "./src/data/colors.json":
+/*!******************************!*\
+  !*** ./src/data/colors.json ***!
+  \******************************/
+/***/ ((module) => {
+
+module.exports = JSON.parse('[{"id":"0175d1f0-a8c6-41bf-8d02-df5734d829a4","title":"ocean at dusk","color":"#00c4e2","rating":5},{"id":"83c7ba2f-7392-4d7d-9e23-35adbe186046","title":"lawn","color":"#26ac56","rating":3},{"id":"a11e3995-b0bd-4d58-8c48-5e49ae7f7f23","title":"bright red","color":"#ff0000","rating":0}]');
+
 /***/ })
 
 /******/ 	});
@@ -40413,8 +40623,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
 /* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/App */ "./src/components/App.js");
+/* harmony import */ var _components_AppColor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/AppColor */ "./src/components/AppColor.js");
 
 //import ReactDOM from "react-dom";
+
 
 
 
@@ -40422,6 +40634,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var root = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.getElementById("root"));
 root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().StrictMode), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_App__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+var rootColor = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.getElementById("rootColor"));
+rootColor.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().StrictMode), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_AppColor__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
 })();
 
 /******/ })()

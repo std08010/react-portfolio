@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 
 import Star from "./Star";
-
-// Array Constructor function
-const createArray = (length) => [...Array(length)];
+import { createArray } from "../utils/HelperFunctions";
 
 export default function StarRating({ totalStars = 5, style = {}, ...props }) {
   //return createArray(totalStars).map((n, i) => <Star selected={i <= totalStars / 2 ? true : false} key={i} />);
