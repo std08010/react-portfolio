@@ -124,6 +124,101 @@ function AppColor() {
 
 /***/ }),
 
+/***/ "./src/components/AppColorContext.js":
+/*!*******************************************!*\
+  !*** ./src/components/AppColorContext.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ AppColorContext)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _color_ColorListContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./color/ColorListContext */ "./src/components/color/ColorListContext.js");
+/* harmony import */ var _context_ColorContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./context/ColorContext */ "./src/components/context/ColorContext.js");
+/* harmony import */ var _data_colors_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../data/colors.json */ "./src/data/colors.json");
+
+
+
+
+
+/**
+ * An example that uses react context (stateless)
+ */
+
+function AppColorContext() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_context_ColorContext__WEBPACK_IMPORTED_MODULE_2__["default"].Provider, {
+    value: {
+      colors: _data_colors_json__WEBPACK_IMPORTED_MODULE_3__
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_color_ColorListContext__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+}
+
+/***/ }),
+
+/***/ "./src/components/AppColorContextWithState.js":
+/*!****************************************************!*\
+  !*** ./src/components/AppColorContextWithState.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ AppColorContextWithState)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _context_ColorContextProvider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./context/ColorContextProvider */ "./src/components/context/ColorContextProvider.js");
+/* harmony import */ var _color_ColorListContextWithState__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./color/ColorListContextWithState */ "./src/components/color/ColorListContextWithState.js");
+/* harmony import */ var _forms_AddColorFormControlledCustomHookContextWithState__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./forms/AddColorFormControlledCustomHookContextWithState */ "./src/components/forms/AddColorFormControlledCustomHookContextWithState.js");
+
+
+
+
+
+/**
+ * An example that uses react context (stateful)
+ */
+
+function AppColorContextWithState() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_context_ColorContextProvider__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_forms_AddColorFormControlledCustomHookContextWithState__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_color_ColorListContextWithState__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+}
+
+/***/ }),
+
+/***/ "./src/components/AppColorContextWithStateCustomHook.js":
+/*!**************************************************************!*\
+  !*** ./src/components/AppColorContextWithStateCustomHook.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ AppColorContextWithStateCustomHook)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _hooks_colorHook__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../hooks/colorHook */ "./src/hooks/colorHook.js");
+/* harmony import */ var _color_ColorListContextWithStateCustomHook__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./color/ColorListContextWithStateCustomHook */ "./src/components/color/ColorListContextWithStateCustomHook.js");
+/* harmony import */ var _forms_AddColorFormControlledContextWithStateCustomHook__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./forms/AddColorFormControlledContextWithStateCustomHook */ "./src/components/forms/AddColorFormControlledContextWithStateCustomHook.js");
+
+
+
+
+
+/**
+ * An example that uses react context (stateful)
+ * but everything regardng the state is in a custom hook in a single module.
+ */
+
+function AppColorContextWithStateCustomHook() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_hooks_colorHook__WEBPACK_IMPORTED_MODULE_1__.ColorProvider, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_forms_AddColorFormControlledContextWithStateCustomHook__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_color_ColorListContextWithStateCustomHook__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+}
+
+/***/ }),
+
 /***/ "./src/components/color/Color.js":
 /*!***************************************!*\
   !*** ./src/components/color/Color.js ***!
@@ -214,6 +309,214 @@ function ColorList(_ref) {
 
 /***/ }),
 
+/***/ "./src/components/color/ColorListContext.js":
+/*!**************************************************!*\
+  !*** ./src/components/color/ColorListContext.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ColorListContext)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Color__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Color */ "./src/components/color/Color.js");
+/* harmony import */ var _context_ColorContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../context/ColorContext */ "./src/components/context/ColorContext.js");
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+function ColorListContext() {
+  var _useContext = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_context_ColorContext__WEBPACK_IMPORTED_MODULE_2__["default"]),
+    colors = _useContext.colors;
+  if (!colors.length) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "No Colors Listed. (Add a Color)");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, colors.map(function (color) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Color__WEBPACK_IMPORTED_MODULE_1__["default"], _extends({
+      key: color.id
+    }, color));
+  }));
+}
+
+/**
+ * This was the use of context consumers before the introduction of hooks.
+ */
+function ColorListContextOldVersion() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_context_ColorContext__WEBPACK_IMPORTED_MODULE_2__["default"].Consumer, null, function (context) {
+    if (!context.colors.length) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "No Colors Listed. (Add a Color)");
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, context.colors.map(function (color) {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Color__WEBPACK_IMPORTED_MODULE_1__["default"], _extends({
+        key: color.id
+      }, color));
+    }));
+  });
+}
+
+/***/ }),
+
+/***/ "./src/components/color/ColorListContextWithState.js":
+/*!***********************************************************!*\
+  !*** ./src/components/color/ColorListContextWithState.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ColorListContextWithState)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Color__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Color */ "./src/components/color/Color.js");
+/* harmony import */ var _context_ColorContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../context/ColorContext */ "./src/components/context/ColorContext.js");
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+function ColorListContextWithState() {
+  var _useContext = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_context_ColorContext__WEBPACK_IMPORTED_MODULE_2__["default"]),
+    colors = _useContext.colors,
+    removeColor = _useContext.removeColor,
+    rateColor = _useContext.rateColor;
+  if (!colors.length) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "No Colors Listed. (Add a Color)");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, colors.map(function (color) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Color__WEBPACK_IMPORTED_MODULE_1__["default"], _extends({
+      key: color.id
+    }, color, {
+      onRemove: removeColor,
+      onRate: rateColor
+    }));
+  }));
+}
+
+/***/ }),
+
+/***/ "./src/components/color/ColorListContextWithStateCustomHook.js":
+/*!*********************************************************************!*\
+  !*** ./src/components/color/ColorListContextWithStateCustomHook.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ColorListContextWithStateCustomHook)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Color__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Color */ "./src/components/color/Color.js");
+/* harmony import */ var _hooks_colorHook__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../hooks/colorHook */ "./src/hooks/colorHook.js");
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+function ColorListContextWithStateCustomHook() {
+  var _useColors = (0,_hooks_colorHook__WEBPACK_IMPORTED_MODULE_2__.useColors)(),
+    colors = _useColors.colors,
+    removeColor = _useColors.removeColor,
+    rateColor = _useColors.rateColor;
+  if (!colors.length) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "No Colors Listed. (Add a Color)");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, colors.map(function (color) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Color__WEBPACK_IMPORTED_MODULE_1__["default"], _extends({
+      key: color.id
+    }, color, {
+      onRemove: removeColor,
+      onRate: rateColor
+    }));
+  }));
+}
+
+/***/ }),
+
+/***/ "./src/components/context/ColorContext.js":
+/*!************************************************!*\
+  !*** ./src/components/context/ColorContext.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+var ColorContext = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createContext)();
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ColorContext);
+
+/***/ }),
+
+/***/ "./src/components/context/ColorContextProvider.js":
+/*!********************************************************!*\
+  !*** ./src/components/context/ColorContextProvider.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ColorContextProvider)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! uuid */ "./node_modules/uuid/dist/esm-browser/v4.js");
+/* harmony import */ var _data_colors_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../data/colors.json */ "./src/data/colors.json");
+/* harmony import */ var _ColorContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ColorContext */ "./src/components/context/ColorContext.js");
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+function ColorContextProvider(_ref) {
+  var children = _ref.children;
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(_data_colors_json__WEBPACK_IMPORTED_MODULE_1__),
+    _useState2 = _slicedToArray(_useState, 2),
+    colors = _useState2[0],
+    setColors = _useState2[1];
+  var addColor = function addColor(title, color) {
+    setColors([].concat(_toConsumableArray(colors), [{
+      id: (0,uuid__WEBPACK_IMPORTED_MODULE_3__["default"])(),
+      rating: 0,
+      title: title,
+      color: color
+    }]));
+  };
+  var rateColor = function rateColor(id, rating) {
+    setColors(colors.map(function (color) {
+      return color.id === id ? _objectSpread(_objectSpread({}, color), {}, {
+        rating: rating
+      }) : color;
+    }));
+  };
+  var removeColor = function removeColor(id) {
+    return setColors(colors.filter(function (color) {
+      return color.id !== id;
+    }));
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ColorContext__WEBPACK_IMPORTED_MODULE_2__["default"].Provider, {
+    value: {
+      colors: colors,
+      addColor: addColor,
+      rateColor: rateColor,
+      removeColor: removeColor
+    }
+  }, children);
+}
+
+/***/ }),
+
 /***/ "./src/components/forms/AddColorFormControlled.js":
 /*!********************************************************!*\
   !*** ./src/components/forms/AddColorFormControlled.js ***!
@@ -281,6 +584,73 @@ function AddColorFormControlled(_ref) {
 
 /***/ }),
 
+/***/ "./src/components/forms/AddColorFormControlledContextWithStateCustomHook.js":
+/*!**********************************************************************************!*\
+  !*** ./src/components/forms/AddColorFormControlledContextWithStateCustomHook.js ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ AddColorFormControlledContextWithStateCustomHook)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _hooks_colorHook__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../hooks/colorHook */ "./src/hooks/colorHook.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+/**
+ * This component is a simple form that uses the useState hook
+ * so it holds state inside it and doesn't manipulate directly the DOM.
+ * So this makes it an controlled component.
+ */
+
+
+
+function AddColorFormControlledContextWithStateCustomHook() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+    _useState2 = _slicedToArray(_useState, 2),
+    title = _useState2[0],
+    setTitle = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("#000000"),
+    _useState4 = _slicedToArray(_useState3, 2),
+    color = _useState4[0],
+    setColor = _useState4[1];
+  var _useColors = (0,_hooks_colorHook__WEBPACK_IMPORTED_MODULE_1__.useColors)(),
+    addColor = _useColors.addColor;
+  var submit = function submit(e) {
+    e.preventDefault(); //this prevents the browser from trying to submit the form with a POST request.
+
+    addColor(title, color);
+    setTitle("");
+    setColor("#000000");
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
+    onSubmit: submit
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    value: title,
+    onChange: function onChange(event) {
+      return setTitle(event.target.value);
+    },
+    type: "text",
+    placeholder: "color title...",
+    required: true
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    value: color,
+    onChange: function onChange(event) {
+      return setColor(event.target.value);
+    },
+    type: "color",
+    required: true
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", null, "ADD"));
+}
+
+/***/ }),
+
 /***/ "./src/components/forms/AddColorFormControlledCustomHook.js":
 /*!******************************************************************!*\
   !*** ./src/components/forms/AddColorFormControlledCustomHook.js ***!
@@ -293,7 +663,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _hooks_useInput__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../hooks/useInput */ "./src/components/hooks/useInput.js");
+/* harmony import */ var _hooks_useInput__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../hooks/useInput */ "./src/hooks/useInput.js");
 function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -324,6 +694,67 @@ function AddColorFormControlledCustomHook(_ref) {
     e.preventDefault(); //this prevents the browser from trying to submit the form with a POST request.
 
     onNewColor(titleProps.value, colorProps.value);
+    resetTitle();
+    resetColor();
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
+    onSubmit: submit
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", _extends({}, titleProps, {
+    type: "text",
+    placeholder: "color title...",
+    required: true
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", _extends({}, colorProps, {
+    type: "color",
+    required: true
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", null, "ADD"));
+}
+
+/***/ }),
+
+/***/ "./src/components/forms/AddColorFormControlledCustomHookContextWithState.js":
+/*!**********************************************************************************!*\
+  !*** ./src/components/forms/AddColorFormControlledCustomHookContextWithState.js ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ AddColorFormControlledCustomHookContextWithState)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _hooks_useInput__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../hooks/useInput */ "./src/hooks/useInput.js");
+/* harmony import */ var _context_ColorContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../context/ColorContext */ "./src/components/context/ColorContext.js");
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+/**
+ * This component is a simple form that uses out custom hook 'useInput'
+ * It also uses react context instead of useState at component root
+ */
+
+
+
+
+function AddColorFormControlledCustomHookContextWithState() {
+  var _useInput = (0,_hooks_useInput__WEBPACK_IMPORTED_MODULE_1__.useInput)(""),
+    _useInput2 = _slicedToArray(_useInput, 2),
+    titleProps = _useInput2[0],
+    resetTitle = _useInput2[1];
+  var _useInput3 = (0,_hooks_useInput__WEBPACK_IMPORTED_MODULE_1__.useInput)("#000000"),
+    _useInput4 = _slicedToArray(_useInput3, 2),
+    colorProps = _useInput4[0],
+    resetColor = _useInput4[1];
+  var _useContext = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_context_ColorContext__WEBPACK_IMPORTED_MODULE_2__["default"]),
+    addColor = _useContext.addColor;
+  var submit = function submit(e) {
+    e.preventDefault(); //this prevents the browser from trying to submit the form with a POST request.
+
+    addColor(titleProps.value, colorProps.value);
     resetTitle();
     resetColor();
   };
@@ -392,42 +823,6 @@ function AddColorFormUncontrolled(_ref) {
 
 /***/ }),
 
-/***/ "./src/components/hooks/useInput.js":
-/*!******************************************!*\
-  !*** ./src/components/hooks/useInput.js ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   useInput: () => (/* binding */ useInput)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-var useInput = function useInput(initialValue) {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(initialValue),
-    _useState2 = _slicedToArray(_useState, 2),
-    value = _useState2[0],
-    setValue = _useState2[1];
-  return [{
-    value: value,
-    onChange: function onChange(e) {
-      return setValue(e.target.value);
-    }
-  }, function () {
-    return setValue(initialValue);
-  }];
-};
-
-/***/ }),
-
 /***/ "./src/components/stars/Star.js":
 /*!**************************************!*\
   !*** ./src/components/stars/Star.js ***!
@@ -471,7 +866,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Star__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Star */ "./src/components/stars/Star.js");
-/* harmony import */ var _utils_helperFunctions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/helperFunctions */ "./src/components/utils/helperFunctions.js");
+/* harmony import */ var _utils_helperFunctions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/helperFunctions */ "./src/utils/helperFunctions.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 var _excluded = ["totalStars", "style"];
 function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -533,7 +928,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Star__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Star */ "./src/components/stars/Star.js");
-/* harmony import */ var _utils_helperFunctions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/helperFunctions */ "./src/components/utils/helperFunctions.js");
+/* harmony import */ var _utils_helperFunctions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/helperFunctions */ "./src/utils/helperFunctions.js");
 
 
 
@@ -559,10 +954,131 @@ function StarRatingNoHook(_ref) {
 
 /***/ }),
 
-/***/ "./src/components/utils/helperFunctions.js":
-/*!*************************************************!*\
-  !*** ./src/components/utils/helperFunctions.js ***!
-  \*************************************************/
+/***/ "./src/hooks/colorHook.js":
+/*!********************************!*\
+  !*** ./src/hooks/colorHook.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ColorProvider: () => (/* binding */ ColorProvider),
+/* harmony export */   useColors: () => (/* binding */ useColors)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! uuid */ "./node_modules/uuid/dist/esm-browser/v4.js");
+/* harmony import */ var _data_colors_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data/colors.json */ "./src/data/colors.json");
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+var ColorConxt = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createContext)();
+var useColors = function useColors() {
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(ColorConxt);
+};
+function ColorProvider(_ref) {
+  var children = _ref.children;
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(_data_colors_json__WEBPACK_IMPORTED_MODULE_1__),
+    _useState2 = _slicedToArray(_useState, 2),
+    colors = _useState2[0],
+    setColors = _useState2[1];
+  var addColor = function addColor(title, color) {
+    setColors([].concat(_toConsumableArray(colors), [{
+      id: (0,uuid__WEBPACK_IMPORTED_MODULE_2__["default"])(),
+      rating: 0,
+      title: title,
+      color: color
+    }]));
+  };
+  var rateColor = function rateColor(id, rating) {
+    setColors(colors.map(function (color) {
+      return color.id === id ? _objectSpread(_objectSpread({}, color), {}, {
+        rating: rating
+      }) : color;
+    }));
+  };
+  var removeColor = function removeColor(id) {
+    return setColors(colors.filter(function (color) {
+      return color.id !== id;
+    }));
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ColorConxt.Provider, {
+    value: {
+      colors: colors,
+      addColor: addColor,
+      rateColor: rateColor,
+      removeColor: removeColor
+    }
+  }, children);
+}
+
+/***/ }),
+
+/***/ "./src/hooks/useInput.js":
+/*!*******************************!*\
+  !*** ./src/hooks/useInput.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   useInput: () => (/* binding */ useInput)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+/**
+ * This is a custom useState hook that can be used to form input elements.
+ * It takes an initialValue and creates a state hook.
+ * It returns the input attributes that are going to be passed to the input element
+ * containing the 'value' attribute and the 'onChange' attribute.
+ * It also returns a function that resets the input field value to the default value.
+ */
+
+var useInput = function useInput(initialValue) {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(initialValue),
+    _useState2 = _slicedToArray(_useState, 2),
+    value = _useState2[0],
+    setValue = _useState2[1];
+  return [{
+    value: value,
+    onChange: function onChange(event) {
+      return setValue(event.target.value);
+    }
+  }, function () {
+    return setValue(initialValue);
+  }];
+};
+
+/***/ }),
+
+/***/ "./src/utils/helperFunctions.js":
+/*!**************************************!*\
+  !*** ./src/utils/helperFunctions.js ***!
+  \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -41052,8 +41568,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
 /* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/App */ "./src/components/App.js");
 /* harmony import */ var _components_AppColor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/AppColor */ "./src/components/AppColor.js");
+/* harmony import */ var _components_AppColorContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/AppColorContext */ "./src/components/AppColorContext.js");
+/* harmony import */ var _components_AppColorContextWithState__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/AppColorContextWithState */ "./src/components/AppColorContextWithState.js");
+/* harmony import */ var _components_AppColorContextWithStateCustomHook__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/AppColorContextWithStateCustomHook */ "./src/components/AppColorContextWithStateCustomHook.js");
 
 //import ReactDOM from "react-dom";
+
+
+
 
 
 
@@ -41064,6 +41586,12 @@ var root = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.get
 root.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().StrictMode), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_App__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
 var rootColor = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.getElementById("rootColor"));
 rootColor.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().StrictMode), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_AppColor__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
+var rootColorContext = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.getElementById("rootColorContext"));
+rootColorContext.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().StrictMode), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_AppColorContext__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
+var rootColorContextWithState = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.getElementById("rootColorContextWithState"));
+rootColorContextWithState.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().StrictMode), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_AppColorContextWithState__WEBPACK_IMPORTED_MODULE_5__["default"], null)));
+var rootColorContextWithStateCustomHook = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(document.getElementById("rootColorContextWithStateCustomHook"));
+rootColorContextWithStateCustomHook.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().StrictMode), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_AppColorContextWithStateCustomHook__WEBPACK_IMPORTED_MODULE_6__["default"], null)));
 })();
 
 /******/ })()

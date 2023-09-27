@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import Star from "./Star";
-import { createArray } from "../utils/helperFunctions";
+import { createArray } from "../../utils/helperFunctions";
 
 
 export default function StarRating({ totalStars = 5, style = {}, ...props }) {
