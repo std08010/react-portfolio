@@ -1,7 +1,7 @@
 {
   "name": "star_rating",
   "version": "1.0.0",
-  "description": "An app that shows how to use React State (useState hook, forms, custom hooks, react context)",
+  "description": "An app that shows how to use React State (useState hook, forms, custom hooks, react context) + use of css 'emotion' lib",
   "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,6 +14,7 @@
   "author": "Altin Cipi <haris.tsipis@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "@emotion/css": "^11.11.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",

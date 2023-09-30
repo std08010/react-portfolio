@@ -5,6 +5,7 @@
  */
 
 import React, { useRef } from "react";
+import { css } from "@emotion/css";
 
 export default function AddColorFormUncontrolled({ onNewColor = (f) => f }) {
   const txtTitle = useRef();
@@ -23,7 +24,23 @@ export default function AddColorFormUncontrolled({ onNewColor = (f) => f }) {
   };
 
   return (
-    <form onSubmit={submit}>
+    <form
+      className={css`
+        display: flex;
+        justify-content: space-around;
+        margin: 0.25em;
+        button {
+          margin: 0.25em;
+        }
+        input {
+          margin: 0.25em;
+          &:first-child {
+            flex: 1;
+          }
+        }
+      `}
+      onSubmit={submit}
+    >
       <input ref={txtTitle} type="text" placeholder="color title..." required />
       <input ref={hexColor} type="color" required />
       <button>ADD</button>
