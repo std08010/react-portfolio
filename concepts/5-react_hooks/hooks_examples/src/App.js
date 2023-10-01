@@ -2,8 +2,11 @@ import "./App.css";
 import Checkbox from "./components/Checkbox";
 import CheckboxBlocking from "./components/CheckboxBlocking";
 import KeyPresser from "./components/KeyPresser";
+import MousePosition from "./components/MousePosition";
 import Phrase from "./components/Phrase";
 import PhraseWithDependency from "./components/PhraseWithDependency";
+import UseLayoutEffect from "./components/UseLayoutEffect";
+import WindowSize from "./components/WindowSize";
 import WordArrayInstance from "./components/WordArrayInstance";
 import WordCount from "./components/WordCount";
 import WordCountUseCallback from "./components/WordCountUseCallback";
@@ -24,7 +27,10 @@ function App() {
       {/* <WordCount>{wordsMsg}</WordCount> */}
       {/* <WordCountUseMemo>{wordsMsg}</WordCountUseMemo> */}
       {/* <WordCountWithFunction /> */}
-      <WordCountUseCallback />
+      {/* <WordCountUseCallback /> */}
+      {/* <UseLayoutEffect /> */}
+      {/* <WindowSize /> */}
+      <MousePosition />
     </>
   );
 }
