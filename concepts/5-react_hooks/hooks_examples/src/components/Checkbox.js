@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
 
+/**
+ * The usage of useEffect hook.
+ */
+
 export default function Checkbox() {
   const [checked, setChecked] = useState(false);
 

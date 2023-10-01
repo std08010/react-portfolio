@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
 
+/**
+ * Multiple useEffect hooks with dependency arrays.
+ * They are called only when the state context they are tied with changes.
+ */
+
 export default function PhraseWithDependency() {
   const [val, setVal] = useState("");
   const [phrase, setPhrase] = useState("example phrase");

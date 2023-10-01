@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
 
+/**
+ * Multiple useEffect hooks are called on every rerendering
+ */
+
 export default function Phrase() {
   const [val, setVal] = useState("");
   const [phrase, setPhrase] = useState("example phrase");
