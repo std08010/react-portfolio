@@ -12,6 +12,11 @@ import WordCount from "./components/WordCount";
 import WordCountUseCallback from "./components/WordCountUseCallback";
 import WordCountUseMemo from "./components/WordCountUseMemo";
 import WordCountWithFunction from "./components/WordCountWithFunction";
+import CatList from "./components/memo/CatList";
+import MeowList from "./components/memo/MeowList";
+import PureCatList from "./components/memo/PureCatList";
+import PureMeowList from "./components/memo/PureMeowList";
+import PureMeowPredicateList from "./components/memo/PureMeowPredicateList";
 import CheckboxReducer from "./components/useReducer/CheckboxReducer";
 import CheckboxSimple from "./components/useReducer/CheckboxSimple";
 import CheckboxToggle from "./components/useReducer/CheckboxToggle";
@@ -44,7 +49,12 @@ function App() {
       {/* <IncrementNumber /> */}
       {/* <UserDataSimpleWrong /> */}
       {/* <UserDataSimpleCorrect /> */}
-      <UserDataReducer />
+      {/* <UserDataReducer /> */}
+      {/* <CatList /> */}
+      {/* <PureCatList /> */}
+      {/* <MeowList /> */}
+      {/* <PureMeowList /> */}
+      <PureMeowPredicateList />
     </>
   );
 }
