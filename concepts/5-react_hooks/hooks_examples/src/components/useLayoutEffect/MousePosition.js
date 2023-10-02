@@ -1,5 +1,5 @@
 import React from "react";
-import useMousePosition from "../hooks/useMousePosition";
+import useMousePosition from "../../hooks/useMousePosition";
 
 export default function MousePosition() {
   const [left, top] = useMousePosition();

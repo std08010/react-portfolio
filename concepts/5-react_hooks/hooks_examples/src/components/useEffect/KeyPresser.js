@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import useAnyKeyToRender from "../hooks/useAnyKeyToRender";
+import React, { useEffect } from "react";
+import useAnyKeyToRender from "../../hooks/useAnyKeyToRender";
 
 export default function KeyPresser() {
   useAnyKeyToRender();

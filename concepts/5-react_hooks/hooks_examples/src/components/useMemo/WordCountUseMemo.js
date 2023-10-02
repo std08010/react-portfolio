@@ -3,7 +3,7 @@
  */
 
 import React, { useEffect, useMemo } from "react";
-import useAnyKeyToRender from "../hooks/useAnyKeyToRender";
+import useAnyKeyToRender from "../../hooks/useAnyKeyToRender";
 
 export default function WordCountUseMemo({ children = "" }) {
   useAnyKeyToRender();

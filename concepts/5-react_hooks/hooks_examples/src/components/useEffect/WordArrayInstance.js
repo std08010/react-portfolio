@@ -3,7 +3,7 @@
  */
 
 import React, { useEffect } from "react";
-import useAnyKeyToRender from "../hooks/useAnyKeyToRender";
+import useAnyKeyToRender from "../../hooks/useAnyKeyToRender";
 
 const wordsSameInstanceEverytime = ["sick", "powder"];
 

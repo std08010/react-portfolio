@@ -4,7 +4,7 @@
  */
 
 import React, { useEffect } from "react";
-import useAnyKeyToRender from "../hooks/useAnyKeyToRender";
+import useAnyKeyToRender from "../../hooks/useAnyKeyToRender";
 
 export default function WordCount({ children = "" }) {
   useAnyKeyToRender();
