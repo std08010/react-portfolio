@@ -1,3 +1,7 @@
+/**
+ * This component shows the use of localStorage
+ */
+
 import React, { useEffect, useState } from "react";
 import { loadJSON, saveJSON } from "../utils/lib";
 
